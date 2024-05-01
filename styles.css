@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    /* border: 1px solid red;   */
+    
+    background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg); 
+    background-repeat: no-repeat;
+    background-position: top left, bottom; 
+    font-family: "League Spartan", sans-serif;
+    width: 375px;
+    margin: auto;
+    font-size: 15px;
+    padding: 0 20px
+}
+.main-container{
+    /* border: 1px solid red; */ 
+    
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: var(--Very-Dark-Magenta);
+    text-align: center;   
+    margin: 65px 64px 30px 64px;
+    font-weight: 700;
+}
+.paragraph-title{
+    color: var(--Dark-Grayish-Magenta);
+    text-align: center;
+    margin: 30px 0;
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 16.5px;
+}
+
+/* --------------Satars--------------- */
+.stars-container{
+    margin-bottom: 30px;
+}
+.stars{
+    background-color: hsl(300, 19%, 81%);
+    color: hsl(300, 43%, 22%);
+    border-radius: 4px;
+    margin: 10px 0;
+    width: 330px;
+    height: 80px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 16.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.five-stars{
+    min-width: 110px;    
+}
+
+/* -------------Cards--------------- */
+.cards-container{    
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    max-width: 330px;
+    height: 250px;
+    padding: 37px 27px;
+    margin: 16px 0px;
+    color: hsl(300, 24%, 96%);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    /* display: grid;
+    grid-template-columns: 1fr 10fr; */    
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-img{    
+    border-radius: 50%;
+    width: 50px;
+}
+.card-items{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.name{
+    font-weight: 700;
+    font-size: 18px;
+}
+.status{
+    color: var(--Soft-Pink);
+}
+
+/* ----------------FOOTER--------------- */
+.attribution {   
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

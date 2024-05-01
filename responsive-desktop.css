@@ -1,0 +1,116 @@
+@media (min-width: 626px){
+    header{
+        width: 600px;  
+        margin-left: -120px;      
+    }
+    .stars-container{
+        margin-left: 30px;
+    }
+    .stars{
+        flex-direction: row;        
+        justify-content: center;
+        
+        width: 380px;
+        height: 60px;
+    }
+    .star-1{        
+        transition: transform 1.8s ease;
+        transform: translateX(-30%);                 
+    }   
+    .star-3{
+        transition: transform 1.8s ease;
+        transform: translateX(30%);
+    } 
+    .card-1{
+        transition: transform 1.8s ease;
+        transform: translateX(-60%);
+    }
+    .card-3{
+        transition: transform 1.8s ease;
+        transform: translateX(60%);
+    } 
+    footer{        
+        margin-left: -250px;        
+        width: 900px;        
+    }
+    .attribution{        
+        font-size: 18px;
+    }   
+}
+
+@media only screen and (min-width: 820px){
+    body{
+        background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;        
+    }
+    header{
+        width: 700px;  
+        margin-left: -160px;      
+    }    
+    .cards-container{          
+        margin-left: -140px;        
+        width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;              
+    }   
+    .card-1,
+    .card-3{
+        transform: none;
+    }
+    .card-3{
+        transform: translateX(52%);
+    }
+}
+@media only screen and (min-width: 1250px){
+    .header-container{        
+        margin-left: -460px;
+        width: 1300px;        
+        display: flex;
+        justify-content: center; 
+        gap: 200px;       
+    }
+    header{        
+        width: 330px;        
+        margin-left: -115px;
+    }
+    h1{
+        font-size: 40px;
+        text-align: left;
+        margin-left: 0;
+        margin-top: 40px;        
+    }
+    .paragraph-title{        
+        display: flex;
+        text-align: left;
+        margin-left: 0; 
+        font-size: 20px; 
+        width: 400px;      
+    }
+    .stars-container{        
+        margin-top: 50px;
+    }    
+    .cards-container{        
+        width: 1100px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-left: -340px;
+    }
+    .card-2{
+        margin-top: 40px;
+    }
+    .card-3{
+        margin-top: 75px;
+    }
+    .card-3{
+        transform: none;
+        transition: none;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
+
+
+       
